@@ -1,6 +1,7 @@
 import * as dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
+import { router } from "./router";
 
 dotenv.config();
 
@@ -10,7 +11,8 @@ const PORT = process.env.PORT;
 mongoose.connect(DB_PATH)
 	.then(() => {
 		const app = express();
-		app.listen(PORT, () => console.log("running"));
+		app.use(router);
+		app.listen(PORT, () => console.log("Running"));
 
 	})
 	.catch(()=> console.log("ERROR"));

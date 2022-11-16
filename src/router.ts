@@ -1,27 +1,18 @@
 import { Router } from "express";
+import { createCategory, listCategories } from "./app/controllers/categoryController";
+import { createOrder, listOrders } from "./app/controllers/orderController";
+import { createProduct, listProducts } from "./app/controllers/productController";
 
 export const router = Router();
 //List/Create Categories
-router.get("/categories", (req, res) => {
-	res.send("OK");
-});
-router.post("/categories", (req, res) => {
-	res.send("OK");
-});
+router.get("/categories", listCategories);
+router.post("/categories", createCategory);
 //List/Create Products
-router.get("/products", (req, res) => {
-	res.send("OK");
-});
-router.post("/products", (req, res) => {
-	res.send("OK");
-});
+router.get("/products", listOrders);
+router.post("/products", createOrder);
 //List/Create Orders
-router.get("/orders", (req, res) => {
-	res.send("OK");
-});
-router.post("/orders", (req, res) => {
-	res.send("OK");
-});
+router.get("/orders", listProducts);
+router.post("/orders", createProduct);
 // List Products By Category
 router.get("/category/:categoryId/products", (req, res) => {
 	res.send("OK");
