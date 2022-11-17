@@ -1,7 +1,7 @@
 import { Schema } from "mongoose";
 import {
 	CategoryType,
-	IgredientsType,
+	IngredientsType,
 	PriceType,
 	StringType,
 } from "./ProductSchemaTypes";
@@ -11,6 +11,6 @@ export const ProductSchema = new Schema ({
 	description: StringType,
 	imagePath: StringType,
 	price: PriceType,
-	igredients: IgredientsType,
+	ingredients: IngredientsType,
 	category: CategoryType
 });

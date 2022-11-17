@@ -9,7 +9,7 @@ export const CategoryType = {
 	type: Schema.Types.ObjectId,
 	ref: "Category"
 };
-export const IgredientsType = {
+export const IngredientsType = {
 	required: true,
 	type: [{
 		name: String,
@@ -18,5 +18,5 @@ export const IgredientsType = {
 };
 export const PriceType = {
 	required: true,
-	price: Number
+	type: Number
 };
