@@ -11,6 +11,7 @@ const PORT = process.env.PORT;
 mongoose.connect(DB_PATH)
 	.then(() => {
 		const app = express();
+		app.use(express.json());
 		app.use(router);
 		app.listen(PORT, () => console.log("Running"));
 
