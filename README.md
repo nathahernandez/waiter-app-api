@@ -1,7 +1,7 @@
 # Visão Geral
 ## Waiter App - O aplicativo do garçom
 
-### Previsão de conclusão 20/12
+### Previsão de conclusão 05/01
 
 ## Visão Geral
 
