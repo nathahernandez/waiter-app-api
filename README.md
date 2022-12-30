@@ -3,7 +3,7 @@
 
 ### Previsão de conclusão 05/01
 
-## Visão Geral
+## Techs
 
 ### Frontend
 - Techs: React, Vite, StyledComponents, Axios e ESLint;
