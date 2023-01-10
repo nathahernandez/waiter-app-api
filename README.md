@@ -1,7 +1,7 @@
+### Working on it now
+
 # Visão Geral
 ## Waiter App - O aplicativo do garçom
-
-### Previsão de conclusão 05/01
 
 ## Techs
 
